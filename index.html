@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مجد الدين | حلويات شامية أصيلة</title>
+<meta name="description" content="مجد الدين - حلويات شامية أصيلة، اطلب أونلاين بسهولة عبر واتساب">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="مجد الدين">
+        <div class="brand-text">
+          <span class="ar-name" id="brand-name-ar">مجد الدين</span>
+          <span class="tagline" id="brand-tagline">حلويات شامية أصيلة</span>
+        </div>
+      </div>
+      <button class="cart-btn" id="cart-btn">
+        🛒 السلة
+        <span class="cart-count hidden" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-eyebrow">طازج يومياً</div>
+    <h1 id="hero-name">مجد الدين</h1>
+    <p id="hero-tagline">حلويات شامية أصيلة</p>
+    <div class="hero-divider"></div>
+  </section>
+
+  <nav class="category-nav" id="category-nav"></nav>
+
+  <main class="catalog" id="catalog"></main>
+
+  <footer class="site-footer">
+    <div class="gold-divider"></div>
+    <p>مجد الدين © جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- Sticky bottom cart bar -->
+  <div class="sticky-cart-bar" id="sticky-cart-bar">
+    <span>عرض السلة (<span id="sticky-count">0</span>)</span>
+    <span id="sticky-total"></span>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h2>سلة الطلبات</h2>
+      <button class="close-cart" id="close-cart">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>الإجمالي</span>
+        <strong id="cart-total-amount">0 ريال</strong>
+      </div>
+      <p class="cart-note">سيتم إرسال تفاصيل الطلب عبر واتساب لتأكيد الطلب وموعد التوصيل.</p>
+      <button class="whatsapp-btn" id="whatsapp-btn" disabled>
+        📲 إرسال الطلب عبر واتساب
+      </button>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
