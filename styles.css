@@ -3,7 +3,7 @@
 =================================================================== */
 
 :root {
-     --deep-green: #14483c;
+     --deep-green: #14483c;h
      --darker-green: #0c2e26;
      --cream: #f7f3ec;
      --cream-darker: #efe8d9;
@@ -66,7 +66,7 @@ img {
 }
 
 .brand img {
-     height: 44px;
+     height: 56px;
      width: auto;
 }
 
