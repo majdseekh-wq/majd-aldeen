@@ -715,3 +715,23 @@ img {
      .social-icon { width: 28px; height: 30px; }
      .social-icon svg { width: 15px; height: 15px; }
 }
+
+
+/* ---------------- تعديل الواجهة: لوجو كبير بدل النصوص ---------------- */
+.hero #hero-name,
+.hero #hero-tagline {
+     display: none;
+}
+.hero::after {
+     content: "";
+     display: block;
+     width: 70%;
+     max-width: 420px;
+     height: 260px;
+     margin: 0 auto;
+     background-image: url("images/logo.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     mix-blend-mode: multiply;
+}
